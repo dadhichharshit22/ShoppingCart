@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="flex flex-row justify-between">
         <NavLink to="/">
           <div>
-            <img src="./logo.png" alt="" />
+            <img src="../logo.png" alt="" />
           </div>
         </NavLink>
         <div>

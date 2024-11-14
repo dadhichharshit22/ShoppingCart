@@ -1,0 +1,23 @@
+.custom-loader {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    color:#766DF4;
+    background: 
+      linear-gradient(currentColor 0 0) center/100% 4px,
+      linear-gradient(currentColor 0 0) center/4px 100%,
+      radial-gradient(farthest-side,#0000 calc(100% - 6px),currentColor calc(100% - 5px)),
+      radial-gradient(circle 6px,currentColor 94%,#0000 0);
+    background-repeat: no-repeat;
+    animation:s10 2s infinite linear;
+    position: relative;
+  }
+  .custom-loader:before {
+    content: "";
+    position: absolute;
+    inset:0;
+    border-radius: inherit;
+    background:inherit;
+    transform:rotate(45deg);
+  }
+  @keyframes s10 {to{transform: rotate(.5turn)}}
