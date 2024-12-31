@@ -15,15 +15,15 @@ const Cart = () => {
    setTotalAmount(cart.reduce((acc,curr)=> acc + curr.price,0));
   },[cart]);
   return (
-    <div>
+    <div className="mb-10">
       {cart.length > 0 ? (
-        <div>
-          <div>
+        <div className="flex flex-row justify-center max-[1300px] mx-auto gap-x-5">
+          <div className="w-[60%] flex flex-col p-2">
             {cart.map((item, index) => {
               return <CartItem key={item.id} item={item} itemIndex={index} />;
             })}
           </div>
-          <div>
+          <div className="w-[40%] mt-5 flex flex-col">
             <div>
               <div>Your Cart</div>
               <div>Summary</div>
